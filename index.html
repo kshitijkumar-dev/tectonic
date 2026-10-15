@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap"><title>Tectonic</title><link rel="icon" href="data:,">
+<link rel="stylesheet" href="assets/css/styles.css"></head><body data-mode="hero">
+<section id="hero" aria-label="Interactive 3D building"><canvas id="c3" aria-label="3D model of Tectonic Tower"></canvas><div id="lbl"></div>
+<div class="hv">
+<header class="hb gl"><div class="brand"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="6" fill="#1B5E20"/><path d="M7 16.5V9.5l5-3 5 3v7" stroke="#A5D6A7" stroke-width="1.8" fill="none" stroke-linejoin="round"/><rect x="10" y="12" width="4" height="4.5" fill="#66BB6A"/></svg><span>Tectonic<small>Building energy intelligence</small></span></div>
+<div class="r"><span class="t demo">DEMO MODE · SIMULATED BUILDING DATA</span><div class="seg"><button id="vo">Outside</button><button id="vi">Inside</button></div></div></header>
+<div class="hc gl"><h2>See where your building wastes energy.</h2><p>A digital twin that finds the waste, tests the fix and checks the modeled result.</p><div class="r" style="margin-top:14px"><button class="b" id="go">Enter Command Center</button><button class="b b2" id="hmb" aria-pressed="false">Heatmap</button></div><p class="m" id="hint" style="margin-top:12px"></p><div class="stats" id="hst"></div></div>
+<div class="hctl gl" id="fb" role="group" aria-label="Select floor"></div>
+<div class="hm gl"><div class="r" style="justify-content:space-between"><b>Heatmap by floor</b><label><input type="checkbox" id="hall"> All</label></div>
+<div class="seg" id="hmet"><button data-m="energy" class="on">Energy</button><button data-m="occ">Occupancy</button></div>
+<div class="r" id="hchips" role="group" aria-label="Heatmap floors"></div><div><div class="ramp" id="hramp"></div><div class="rl"><span id="hl1">Low</span><span id="hl2">High</span></div><p class="m" id="hdesc" style="margin:6px 0 0;font-size:11px;line-height:1.4"></p></div></div>
+<div class="gl" id="fp" hidden role="dialog" aria-label="Floor summary"></div>
+<div class="gl" id="rc" hidden></div>
+<div class="gl lg"><span><i style="background:#8CC68F"></i>In use</span><span><i style="background:#CBDDC9;border:1px solid #a8c0a8"></i>Idle</span><span class="red"><i style="background:#C62828"></i>▲ Empty but running</span></div>
+</div></section>
+<div class="app" id="app"><nav id="nav" aria-label="Primary"></nav><main id="main"></main></div><div id="toast" role="status"></div><div id="veil" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="6" fill="#1B5E20"/><path d="M7 16.5V9.5l5-3 5 3v7" stroke="#A5D6A7" stroke-width="1.8" fill="none" stroke-linejoin="round"/><rect x="10" y="12" width="4" height="4.5" fill="#66BB6A"/></svg></div>
+<script src="assets/js/app.js"></script>
+<script src="lib/three.min.js"></script>
+<script src="lib/OrbitControls.js"></script>
+<script src="assets/js/digital-twin.js"></script></body></html>
