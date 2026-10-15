@@ -2,9 +2,13 @@
 
 A standalone building-energy intelligence prototype with an interactive 3D digital twin and a simulated command center.
 
+## Live demo
+
+Try Tectonic here: <https://tectonic-liard-seven.vercel.app/>
+
 ## Run locally
 
-The project has no build step or package dependencies. From this folder, start a static HTTP server:
+The project has no build step or package dependencies. To serve it locally, open a terminal in this folder and run:
 
 ```powershell
 py -m http.server 8000
